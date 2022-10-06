@@ -3,9 +3,9 @@
 
 /**
  * string_nconcat -concatenates two strings.
- * @s1 - ...
- * @s2 - ...
- * @n - ...
+ * @s1: string
+ * @s2: string 2
+ * @n: number of bytes of s2
  *
  * Return: always 0
  */
