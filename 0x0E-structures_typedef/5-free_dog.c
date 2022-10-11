@@ -3,7 +3,7 @@
 
 /**
  * free_dog - function that frees dog
- * @d - element
+ * @d: element
  *
  * Return: Nothing
  */
