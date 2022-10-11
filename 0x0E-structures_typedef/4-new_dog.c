@@ -6,9 +6,9 @@ char *_strcpy(char *dest, char *src);
 
 /**
  * new_dog - the new dog
- * @name - name of the new dog
- * @age - age of the new dog
- * @owner - owner of the new dog
+ * @name: name of the new dog
+ * @age: age of the new dog
+ * @owner: owner of the new dog
  *
  * Return: Nothing
  */
