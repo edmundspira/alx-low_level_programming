@@ -11,15 +11,15 @@
 
 int main(int argc, char **argv)
 {
-	int (*pf)(int, int);
+	int (*oprt)(int, int);
 
-	if (argc != 4)
+	if (argc > 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
 
-	pf = get_op_func(argv[2]);
+	oprt = get_op_func(argv[2]);
 
 	if (!oprt)
 	{
@@ -27,6 +27,6 @@ int main(int argc, char **argv)
 		exit(99);
 	}
 
-	printf("%d\n", oprt(atoi(argv[1]), atoi(argv[3])));
+	printf("%d", oprt(atoi(argv[1]), atoi(argv[3])));
 	return (0);
 }

@@ -1,6 +1,10 @@
 #ifndef POINTERS_F
 #define POINTERS_F
 
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
  * struct op - Struct op
  * @op: The operator
