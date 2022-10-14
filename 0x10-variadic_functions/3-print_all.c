@@ -33,10 +33,8 @@ void print_all(const char * const format, ...)
 				form_types[j].f(separator, args);
 				separator = ", ";
 			}
-
 			j++;
 		}
-
 		i++;
 	}
 	va_end(args);
@@ -67,6 +65,19 @@ void print_a_char(char *separator, va_list args)
 void print_a_integer(char *separator, va_list args)
 {
 	printf("%s%i", separator, va_arg(args, int));
+}
+
+/**
+ * print_a_float - Prints a character of float type
+ * @separator: The separator of the character
+ * @args: A list of variadic arguments
+ *
+ * Return: Nothing
+ */
+
+void print_a_float(char *separator, va_list args)
+{
+	printf("%s%f", separator, va_arg(args, double));
 }
 
 /**
