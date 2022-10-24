@@ -3,6 +3,11 @@
 
 #include <stdlib.h>
 
+int _putchar(char c);
+char *_strdup(const char *str);
+int _strlen(const char *s);
+
+
 /**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
