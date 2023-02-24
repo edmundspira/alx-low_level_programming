@@ -1,0 +1,22 @@
+# Makefile with flags
+
+CC=gcc
+SRC=holberton.c main.c
+OBJ=$(SRC:.c=.o)
+NAME=holberton
+CFLAGS=-Wall -Werror -Wextra -pedantic
+
+.PHONY: clean oclean fclean re all $(NAME)
+all: $(SRC) $(NAME)
+
+$(NAME): m.h $(OBJ)
+	$(CC) $(OBJ) -o $@
+
+fclean: oclean clean
+
+oclean:
+	$(RM) $(OBJ)
+clean:
+	$(RM) *~ $(NAME)
+
+re: oclean all
